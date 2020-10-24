@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Maven Pro', sans-serif;
+  background-color: #fc4b25;
+
+}
+body {
+  background-color: #fc4b25;
+}
+.center  {
+  display: flex;
+  justify-content: center;
+}
+.ex1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+.btn {
+  margin-top: 70px;
+  color: white;
+  padding: 30px 43px 30px 43px;
+  border-radius: 4px;
+  background: #fd9326;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.30);
+  cursor: pointer;
+  transition:all 0.4s ease;
+}
+
+.btn:hover {
+  margin-top: 70px;
+  color: white;
+  padding: 30px 43px 30px 43px;
+  border-radius: 4px;
+  background: #fc4b25;
+  box-shadow: 0px 2px 10px -1px rgba(0,0,0,0.30);
+  transition-timing-function: ease;
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn:active {
+  margin-top: 70px;
+  color: white;
+  padding: 30px 43px 30px 43px;
+  border-radius: 4px;
+  background: #fc4b25;
+  cursor: pointer;
+  transition-timing-function: ease;
+  box-shadow: none;
+}
+
+

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title style="text-align:center;"> Detalles de solicitud  <ion-icon name="menu"></ion-icon></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+ 
+<br> 
+
+
+
+	<div class="Card">
+		<div>
+			<h2>Detalles del prospecto</h2>
+      <br>
+      <p>*Folio: {{id}}</p>
+		  <p>*Empleado: {{nombre_empleado}}</p>
+      <p>*Proveedor: {{proveedor}}</p>
+      <p>*Insumo: {{insumo_nombre}}</p>
+      <p>*Cant. solicitada: {{cantidad_solicitada}}</p>
+      <p>*Cant. recibida: {{cantidad_recibida}}</p>
+      <p>*Fecha: {{fecha_emision}}</p>
+      <p>*Sucursal: {{sucursal}}</p>
+      <br> 
+      <br> 
+      <ion-button color="tertiary" (click)=Regresar()>Regresar <ion-icon name="backspace"></ion-icon></ion-button>
+		</div>
+	</div>
+  </div>
+
+</ion-content>

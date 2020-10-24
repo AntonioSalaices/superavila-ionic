@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Registro de solicitud
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+ <div class="center">
+ <br>
+<br>
+  
+
+      <strong> <br> <br><br> <br><br>  Captura de solicitud</strong>
+  
+ </div>
+  <div class="ex1">
+
+ <br><br>
+
+      
+         *Empleado
+        <ion-input type="text" [(ngModel)]="nombre_empleado" required></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+          *Sucursal
+          <ion-item>
+          <ion-label>Sucursal</ion-label>
+          <ion-select placeholder="Selecciona una sucursal" [(ngModel)]="sucursal" required>
+               <ion-select-option value="1">Los Mochis</ion-select-option>
+               <ion-select-option value="2">Culiacán</ion-select-option>
+          </ion-select>
+          </ion-item>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+         *Proveedor
+          <ion-input [(ngModel)]="proveedor" type="text"></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+       
+          *Nombre de insumo
+          <ion-input [(ngModel)]="insumo_nombre" type="text" required></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        
+          *Descripción
+          <ion-input [(ngModel)]="descripcion" type="text" required></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+       
+          *Marca
+          <ion-input [(ngModel)]="marca" type="text" required></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      
+          *Cantidad solicitada
+          <ion-input [(ngModel)]="cantidad_solicitada" type="number" (ngModelChange)="calculo()" required></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      
+  
+       
+         *Precio unitario
+          <ion-input [(ngModel)]="precio_unidad" type="number" (ngModelChange)="calculo()" required></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+      
+      
+        
+         *Total
+          <ion-input [(ngModel)]="total" type="text" required readonly></ion-input>
+     <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        
+
+       
+       
+
+
+<br>
+
+
+
+<ion-button color="success" (click)=insertar()>Enviar <ion-icon name="checkmark-circle-outline"></ion-icon></ion-button>
+  
+ </div>
+
+
+
+</ion-content>

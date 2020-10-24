@@ -1,0 +1,7 @@
+{
+  "name": "superAvila",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

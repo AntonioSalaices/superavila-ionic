@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Estado de solicitudes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<br>
+<br>
+
+<br>
+<br>
+  <ion-searchbar style="width:50%; left:25%;" (ionInput)="filterArray($event)">
+
+  </ion-searchbar>
+<div class="ex1">
+<br>
+<br>
+   <table id="table">
+  <tr>
+    <th>Folio</th>
+    <th>Empleado</th>
+    <th>Sucursal</th>
+    <th>Proveedor</th>
+    <th>Insumo</th>
+    <th>Marca</th>
+    <th>Cantidad</th>
+    <th>Enviada</th>
+    <th>Total</th>
+    <th>Fecha</th>
+  </tr>
+
+  <tr *ngFor="let solicitud of generateArray(arr)">
+   <td>{{solicitud.id}}</td>
+   <td>{{solicitud.nombre_empleado}}</td>
+   <td>{{solicitud.sucursal}}</td>
+   <td>{{solicitud.proveedor}}</td>
+   <td>{{solicitud.insumo_nombre}}</td>
+   <td>{{solicitud.marca}}</td>
+   <td>{{solicitud.cantidad_solicitada}}</td>
+   <td>
+
+   
+    <ion-checkbox checked="{{solicitud.estado_solicitud}}" (click)="presentAlertPrompt(solicitud.id)" ></ion-checkbox>
+   
+
+
+   </td>
+   <td>{{solicitud.total}}</td>
+   <td>{{solicitud.fecha_emision | date:medium}}</td>
+  </tr>
+
+   </table>
+   </div>
+
+
+</ion-content>
